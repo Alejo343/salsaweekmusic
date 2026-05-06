@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(json|yml|yaml|toml|config|env\\)$|Makefile|package.json|webpack|vite|rollup|tsconfig\")",
+      "Bash(python3 *)"
+    ]
+  }
+}
