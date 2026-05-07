@@ -100,6 +100,67 @@ gsap.utils.toArray('.reveal').forEach(el => {
   });
 });
 
+// ── Scroll-driven highlight: card closest to screen center gets is-active ──────
+const ponenteCards = document.querySelectorAll('.ponente-card');
+const ponenteSection = document.getElementById('ponentes');
+if (ponenteCards.length && ponenteSection) {
+  lenis.on('scroll', () => {
+    const sec = ponenteSection.getBoundingClientRect();
+    if (sec.bottom < 0 || sec.top > window.innerHeight) {
+      ponenteCards.forEach(c => c.classList.remove('is-active'));
+      return;
+    }
+    const mid = window.innerHeight / 2;
+    let closest = null;
+    let minDist = Infinity;
+    ponenteCards.forEach(card => {
+      const r = card.getBoundingClientRect();
+      const dist = Math.abs((r.top + r.height / 2) - mid);
+      if (dist < minDist) { minDist = dist; closest = card; }
+    });
+    ponenteCards.forEach(c => c.classList.toggle('is-active', c === closest));
+  });
+}
+
+// ── Count-up animation for ponentes stats ────────────────────────────────────
+const statNums = document.querySelectorAll('.ponentes-stat-num[data-count]');
+if (statNums.length) {
+  ScrollTrigger.create({
+    trigger: '.ponentes-stat-row',
+    start: 'top 88%',
+    once: true,
+    onEnter: () => {
+      statNums.forEach((el, i) => {
+        const target = +el.dataset.count;
+        const suffix = el.dataset.suffix || '';
+        el.textContent = '0' + suffix;
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: target,
+          duration: 1.8,
+          ease: 'power3.out',
+          delay: 0.1 + i * 0.18,
+          onUpdate() {
+            el.textContent = Math.round(obj.val) + suffix;
+          },
+        });
+      });
+    },
+  });
+}
+
+// ── Schedule scroll: hide right fade when at end ─────────────────────────────
+const scheduleScroll = document.querySelector('.schedule-scroll');
+const scheduleWrap   = document.querySelector('.schedule-scroll-wrap');
+if (scheduleScroll && scheduleWrap) {
+  const update = () => {
+    const atEnd = scheduleScroll.scrollLeft + scheduleScroll.clientWidth >= scheduleScroll.scrollWidth - 8;
+    scheduleWrap.classList.toggle('at-end', atEnd);
+  };
+  scheduleScroll.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
 // ── Dot navigation ───────────────────────────────────────────────────────────
 const sectionIds = ['hero','porque','que-es','actividades','aliados','ponentes','schedule','homenaje','cta'];
 const dots = document.querySelectorAll('.dot');
