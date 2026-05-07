@@ -410,7 +410,7 @@ section {
 
 /* ═══ HEADINGS ═══ */
 h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Broadway', 'Bebas Neue', sans-serif;
   font-size: clamp(52px, 7vw, 100px);
   line-height: 0.95;
   color: white;
@@ -1393,7 +1393,7 @@ h2 .outline {
 }
 
 .porque-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Broadway', 'Bebas Neue', sans-serif;
   font-size: clamp(44px, 5.5vw, 84px);
   line-height: 1;
   color: white;
@@ -1889,7 +1889,10 @@ h2 .outline {
   .section-label { display: none; }
   .slide-counter { right: 14px; top: auto; bottom: 36px; transform: none; flex-direction: row; }
   .dot.active { height: 4px; width: 20px; }
-  .partner-item { width: calc(33% - 1px); }
+  .partners-grid { gap: 18px 14px; margin-top: 48px; }
+  .partner-item { width: 90px; height: 90px; }
+  .partner-name { font-size: 9px; letter-spacing: 1.5px; }
+  .partner-wrap { gap: 10px; }
   #hero::before { display: none; }
   .hero-ticker-item { padding: 0 24px; }
   .hero-date { flex-wrap: wrap; }
@@ -1924,4 +1927,7 @@ h2 .outline {
   .ponente-card-icon { margin-bottom: 0; flex-shrink: 0; }
   .ponente-card-ghost { font-size: 42px; bottom: -2px; right: -4px; }
   .ponente-card-num { top: 18px; right: 18px; }
+  .partner-item { width: 76px; height: 76px; }
+  .partners-grid { gap: 14px 10px; }
+  .partner-name { font-size: 8px; letter-spacing: 1px; }
 }
