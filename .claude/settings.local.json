@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(grep -E \"\\\\.\\(json|yml|yaml|toml|config|env\\)$|Makefile|package.json|webpack|vite|rollup|tsconfig\")",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(Select-String -Path \"c:\\\\Users\\\\David\\\\Documents\\\\salsaweekmusic\\\\index.html\" -Pattern \"cta|#cta|background.*fondo|fondo.*background\" -Context 3)",
+      "Bash(Select-Object -Last 30)"
     ]
   }
 }
