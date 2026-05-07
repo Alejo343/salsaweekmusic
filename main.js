@@ -1,3 +1,6 @@
+// Prevent browser from fighting Lenis on reload mid-page
+history.scrollRestoration = 'manual';
+
 // ── Smooth scroll (Lenis) ────────────────────────────────────────────────────
 const lenis = new Lenis({
   duration: 1.2,
