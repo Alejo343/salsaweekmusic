@@ -1410,7 +1410,7 @@ h2 .outline {
 }
 
 .billboard-hero-logo {
-  width: min(440px, 68vw);
+  width: min(580px, 82vw);
   height: auto;
   object-fit: contain;
 }
@@ -1774,7 +1774,7 @@ h2 .outline {
 }
 
 .qeh-tagline {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-style: italic;
   font-size: clamp(17px, 2.1vw, 30px);
   color: var(--gold);
@@ -1796,7 +1796,7 @@ h2 .outline {
   margin-bottom: 8px;
 }
 .qe-hook-line {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(18px, 2.2vw, 26px);
   font-style: italic;
   color: rgba(245,237,216,0.85);
@@ -1810,13 +1810,14 @@ h2 .outline {
   line-height: 1;
 }
 .qe-body {
+  font-family: 'DM Sans', sans-serif;
   font-size: 17px;
   line-height: 1.85;
   color: rgba(245,237,216,0.82);
 }
 .qe-body strong { color: var(--gold); font-weight: 500; }
 .qe-callout {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(18px, 2.4vw, 28px);
   font-style: italic;
   color: var(--gold);
@@ -1917,11 +1918,12 @@ h2 .outline {
   color: var(--gold);
 }
 .qe-date-city {
-  font-family: 'Playfair Display', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(16px, 2vw, 22px);
   color: var(--cream);
 }
 .qe-date-desc {
+  font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   line-height: 1.65;
   color: rgba(245,237,216,0.5);
