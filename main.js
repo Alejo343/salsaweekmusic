@@ -185,3 +185,31 @@ sectionIds.forEach((id, idx) => {
     onEnterBack:  () => dots.forEach((d, i) => d.classList.toggle('active', i === idx)),
   });
 });
+
+// ── Ticket Widget ────────────────────────────────────────────────────────────
+(function () {
+  const widget = document.getElementById('twWidget');
+  const tab    = document.getElementById('twTab');
+  const panel  = document.getElementById('twPanel');
+  const closeBtn = document.getElementById('twClose');
+  if (!widget) return;
+
+  function openWidget() {
+    widget.classList.add('tw-open');
+    tab.setAttribute('aria-expanded', 'true');
+    panel.setAttribute('aria-hidden', 'false');
+  }
+  function closeWidget() {
+    widget.classList.remove('tw-open');
+    tab.setAttribute('aria-expanded', 'false');
+    panel.setAttribute('aria-hidden', 'true');
+  }
+
+  tab.addEventListener('click', () =>
+    widget.classList.contains('tw-open') ? closeWidget() : openWidget()
+  );
+  closeBtn.addEventListener('click', e => { e.stopPropagation(); closeWidget(); });
+  document.addEventListener('click', e => {
+    if (widget.classList.contains('tw-open') && !widget.contains(e.target)) closeWidget();
+  });
+})();

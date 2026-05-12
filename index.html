@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="stylesheet" href="styles.css?v=5" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.css"
@@ -28,7 +28,7 @@
         <li><a href="#actividades">Actividades</a></li>
         <li><a href="#aliados">Aliados</a></li>
         <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#homenaje">Homenaje Cali</a></li>
+        <!-- <li><a href="#homenaje">Homenaje Cali</a></li> -->
         <li><a href="#cta">Únete</a></li>
       </ul>
     </nav>
@@ -41,7 +41,7 @@
       <div class="dot" data-target="aliados"></div>
       <div class="dot" data-target="ponentes"></div>
       <div class="dot" data-target="schedule"></div>
-      <div class="dot" data-target="homenaje"></div>
+      <!-- <div class="dot" data-target="homenaje"></div> -->
       <div class="dot" data-target="cta"></div>
     </div>
 
@@ -57,13 +57,19 @@
       <div class="bg-overlay overlay-dark-full"></div>
 
       <div class="section-inner">
-        <div class="hero-eyebrow">Billboard Colombia Presenta</div>
+        <div class="hero-eyebrow">
+          <img
+            src="logos/Logo Billboard Presenta.png"
+            alt="Billboard Colombia Presenta"
+            class="hero-eyebrow-logo"
+          />
+        </div>
         <img
           src="logos/Logo Salsa Week.png"
           alt="Salsa Music Week"
           class="hero-logo-img"
         />
-        <div class="hero-sub">CALI 2025</div>
+        <div class="hero-sub">CALI 2026</div>
         <div class="hero-date">
           <div class="hero-date-item">
             <div class="hero-date-num">15</div>
@@ -107,15 +113,21 @@
       <div class="section-inner porque-inner">
         <!-- Centered header with logo -->
         <div class="porque-header">
-          <div class="porque-eyebrow reveal">Autoridad Global en Música</div>
           <img
             src="logos/Logo%20Billboard%20Presenta.png"
             class="billboard-hero-logo reveal reveal-delay-1"
             alt="Billboard Colombia Presenta"
           />
-          <h2 class="porque-title reveal reveal-delay-2">
-            ¿POR QUÉ <span class="outline">BILLBOARD?</span>
-          </h2>
+          <div class="porque-editorial reveal reveal-delay-2">
+            <div class="porque-ed-pre">Durante una semana,</div>
+            <div class="porque-ed-city">CALI</div>
+            <div class="porque-ed-connector">se convierte en la</div>
+            <div class="porque-ed-highlight">Capital Mundial de la Salsa</div>
+            <div class="porque-ed-body">
+              reuniendo leyendas, nuevos talentos y líderes de la industria
+              en un escenario histórico proyectado al mundo entero.
+            </div>
+          </div>
         </div>
 
         <!-- Decorative separator with logo -->
@@ -163,65 +175,44 @@
           </div>
         </div>
 
-        <!-- Ecosistema de socios — logo river -->
+        <!-- Ecosistema de aliados — logo river -->
         <div class="ecosistema reveal reveal-delay-2">
-          <div class="eco-label">Ecosistema de socios</div>
+          <div class="eco-label">Ecosistema de aliados</div>
           <div class="eco-strip">
             <div class="eco-track">
-              <div class="eco-logo">
-                <img src="logos/spotify.jpg" alt="Spotify" />
-              </div>
-              <div class="eco-logo">
-                <img src="logos/universal%20music.jpg" alt="Universal Music" />
-              </div>
-              <div class="eco-logo">
-                <img
-                  src="logos/SME-logo-on-black-background.jpg"
-                  alt="Sony Music"
-                />
-              </div>
-              <div class="eco-logo">
-                <img
-                  src="logos/Apple-Music-Top-Songs-2022.webp"
-                  alt="Apple Music"
-                />
-              </div>
-              <div class="eco-logo">
-                <img src="logos/amazon%20music.jpg" alt="Amazon Music" />
-              </div>
-              <div class="eco-logo">
-                <img src="logos/Virgin_Music.jpg" alt="Virgin Music" />
-              </div>
-              <div class="eco-logo">
-                <img src="logos/tiktok.avif" alt="TikTok" />
-              </div>
-              <div class="eco-logo">
-                <img src="logos/claro%20musica.png" alt="Claro Música" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/spotify.jpg" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/universal%20music.jpg" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/SME-logo-on-black-background.jpg" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/Apple-Music-Top-Songs-2022.webp" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/amazon%20music.jpg" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/Virgin_Music.jpg" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/tiktok.avif" alt="" />
-              </div>
-              <div class="eco-logo" aria-hidden="true">
-                <img src="logos/claro%20musica.png" alt="" />
-              </div>
+              <div class="eco-logo"><img src="logos_sin_fondo/spotify.png" alt="Spotify" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/universal%20music-Photoroom.png" alt="Universal Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/sony%20music.png" alt="Sony Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png" alt="Apple Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/amazon%20music-Photoroom.png" alt="Amazon Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/Virgin_Music-Photoroom.png" alt="Virgin Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/tiktok-Photoroom.png" alt="TikTok" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/claro%20musica-Photoroom.png" alt="Claro Música" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/deezer.png" alt="Deezer" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/yt%20music.png" alt="YouTube Music" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/ONErpm-logo-Photoroom.png" alt="ONErpm" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/ocesa-Photoroom.png" alt="OCESA" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/codiscos-Photoroom.png" alt="Codiscos" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/decibeles.net-Photoroom.png" alt="Decibeles.net" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/luminate.png" alt="Luminate" /></div>
+              <div class="eco-logo"><img src="logos_sin_fondo/Los_40.svg.png" alt="Los 40" /></div>
+              <!-- Duplicado para scroll infinito -->
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/spotify.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/universal%20music-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/sony%20music.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/amazon%20music-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Virgin_Music-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/tiktok-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/claro%20musica-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/deezer.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/yt%20music.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/ONErpm-logo-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/ocesa-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/codiscos-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/decibeles.net-Photoroom.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/luminate.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Los_40.svg.png" alt="" /></div>
             </div>
           </div>
         </div>
@@ -234,10 +225,10 @@
         class="bg-img"
         style="
           background-image: url(fondos/Salsa_week_1.png);
-          filter: brightness(0.75);
+          filter: brightness(0.45);
         "
       ></div>
-      <div class="bg-overlay overlay-dark-right"></div>
+      <div class="bg-overlay" style="background: rgba(7,3,10,0.55)"></div>
       <div class="que-es-corona"></div>
       <div class="section-label">02 / Qué es</div>
 
@@ -246,38 +237,74 @@
         <div class="qe-eyebrow reveal">
           <span>Primera Edición</span>
           <span class="qe-dot">◆</span>
-          <span>Cali 2025</span>
-          <span class="qe-dot">◆</span>
-          <span>Billboard Colombia</span>
+          <span>Cali 2026</span>
         </div>
 
         <!-- Hero title block -->
         <div class="qe-headline reveal reveal-delay-1">
-          <div class="qeh-pre">¿QUÉ ES?</div>
+          <img
+            src="logos/Logo Billboard Presenta.png"
+            alt="Billboard Colombia Presenta"
+            class="qeh-billboard-logo"
+          />
           <img
             src="logos/Logo Salsa Week.png"
             alt="Salsa Music Week"
             class="qeh-logo-img"
           />
-          <div class="qeh-tagline">
-            Evento más grande del mundo dedicado a la salsa
-          </div>
         </div>
 
-        <!-- Statement glass card -->
-        <div class="qe-statement reveal reveal-delay-2">
-          <p>
-            Durante una semana, <strong>Cali</strong> se convierte en la
-            <em>capital mundial de la salsa</em>, reuniendo leyendas, nuevos
-            talentos y líderes de la industria en un escenario histórico
-            proyectado al mundo entero.
-          </p>
+        <!-- Narrative -->
+        <div class="qe-narrative reveal reveal-delay-2">
+          <div class="qe-hook">
+            <div class="qe-hook-line">La salsa no es solamente música.</div>
+            <div class="qe-hook-big">La salsa es un universo.</div>
+          </div>
+
+          <div class="qe-body">
+            Un universo compuesto por <strong>estrellas</strong> que brillan
+            desde hace décadas y por constelaciones enteras formadas por
+            <strong>cantantes, músicos, compositores, productores, bailarines,
+            instrumentos, disqueras, emisoras, escenarios</strong> y
+            generaciones completas que han mantenido vivo este movimiento
+            cultural alrededor del mundo.
+          </div>
+
+          <div class="qe-callout">
+            Durante años, ese universo ha estado disperso entre países, ciudades
+            y escenarios.
+          </div>
+
+          <div class="qe-body qe-body--highlight">
+            Hoy, por primera vez, <strong>Billboard</strong> logra alinearlo.
+          </div>
+
+          <div class="qe-date-block">
+            <div class="qe-date-range">15–19</div>
+            <div class="qe-date-divider"></div>
+            <div class="qe-date-details">
+              <div class="qe-date-month">Septiembre · 2026</div>
+              <div class="qe-date-city">Cali, Colombia</div>
+              <div class="qe-date-desc">
+                El punto donde convergerán todas las galaxias de la salsa en una
+                sola semana histórica de cultura, industria, networking,
+                conciertos y experiencias.
+              </div>
+            </div>
+          </div>
+
+          <div class="qe-finale">
+            <div class="qe-finale-pre">Así nace el</div>
+            <div class="qe-finale-big">Billboard Salsa Music Week</div>
+            <div class="qe-finale-crown">
+              El evento de salsa más grande del mundo.
+            </div>
+          </div>
         </div>
 
         <!-- Three pillars -->
         <div class="qe-pillars reveal reveal-delay-3">
           <div class="qe-pillar">
-            <div class="qep-num">01</div>
             <div class="qep-label">Capital Mundial</div>
             <p class="qep-desc">
               Cali, epicentro global de la salsa durante cinco días únicos e
@@ -285,7 +312,6 @@
             </p>
           </div>
           <div class="qe-pillar qe-pillar--hero">
-            <div class="qep-num">02</div>
             <div class="qep-label">Estilo Billboard</div>
             <p class="qep-desc">
               La marca musical más influyente del planeta, por primera vez en
@@ -293,11 +319,7 @@
             </p>
           </div>
           <div class="qe-pillar">
-            <div class="qep-num">03</div>
-            <div class="qep-label">Alcance Global</div>
-            <p class="qep-desc">
-              Nueva York, Tokio, Buenos Aires y el mundo entero, todo desde Cali
-            </p>
+            <div class="qep-label">Global</div>
           </div>
         </div>
       </div>
@@ -511,7 +533,7 @@
           <p
             style="
               margin-top: 24px;
-              font-size: 15px;
+              font-size: 18px;
               color: rgba(245, 237, 216, 0.5);
               max-width: 560px;
               margin-left: auto;
@@ -624,6 +646,12 @@
             </div>
             <span class="partner-name">YouTube Music</span>
           </div>
+          <div class="partner-wrap">
+            <div class="partner-item">
+              <img src="logos/los_40.jpg" alt="Los 40" />
+            </div>
+            <span class="partner-name">Los 40</span>
+          </div>
         </div>
       </div>
     </section>
@@ -646,7 +674,8 @@
         <div class="ponentes-left">
           <div class="eyebrow reveal">Voces de la Industria</div>
           <h2 class="reveal reveal-delay-1">
-            PONENTES<br /><span class="outline">DE ÉLITE</span>
+            <!-- PONENTES<br /><span class="outline"> ÉLITE</span> -->
+            SPEAKERS</span>
           </h2>
           <div class="gold-divider reveal reveal-delay-2"></div>
           <p class="body-text reveal reveal-delay-3">
@@ -666,13 +695,6 @@
                 >5</span
               >
               <span class="ponentes-stat-label">Días</span>
-            </div>
-            <div class="ponentes-stat-divider"></div>
-            <div class="ponentes-stat">
-              <span class="ponentes-stat-num" data-count="6" data-suffix=""
-                >6</span
-              >
-              <span class="ponentes-stat-label">Perfiles</span>
             </div>
           </div>
         </div>
@@ -855,15 +877,15 @@
         style="padding-top: 140px; padding-bottom: 100px"
       >
         <div class="reveal">
-          <div class="eyebrow">Septiembre 2025</div>
-          <h2>SCHEDULE <span class="outline">SEMANAL</span></h2>
+          <div class="eyebrow">Septiembre 2026</div>
+          <h2>AGENDA</h2>
         </div>
 
         <div class="schedule-scroll-wrap reveal reveal-delay-2">
           <div class="schedule-scroll">
             <div class="week-tracks">
               <!-- ── MARTES 15 ── -->
-              <div class="day-track">
+              <div class="day-track day-weekend">
                 <div class="day-head">
                   <div class="day-ghost">15</div>
                   <div class="day-label-wrap">
@@ -873,41 +895,21 @@
                   </div>
                 </div>
                 <div class="day-events">
-                  <div class="ev ev-meta">
-                    <span class="ev-time">8:30</span
-                    ><span class="ev-name">Check-in</span>
+                  <div class="ev ev-gold">
+                    <span class="ev-time">9:00 – 11:00</span
+                    ><span class="ev-name">Hall of Fame</span>
                   </div>
-                  <div class="ev">
-                    <span class="ev-time">9:00</span
-                    ><span class="ev-name">Conferencia</span>
-                  </div>
-                  <div class="ev">
-                    <span class="ev-time">10:10</span
-                    ><span class="ev-name">Panel</span>
-                  </div>
-                  <div class="ev">
-                    <span class="ev-time">11:10</span
-                    ><span class="ev-name">Conferencia</span>
+                  <div class="ev ev-gold">
+                    <span class="ev-time">12:00 – 5:00</span
+                    ><span class="ev-name">Trade Fair</span>
                   </div>
                   <div class="ev ev-meta">
-                    <span class="ev-time">12:00</span
-                    ><span class="ev-name">Break</span>
+                    <span class="ev-time">7:00 pm</span
+                    ><span class="ev-name">Cóctel de Bienvenida</span>
                   </div>
-                  <div class="ev">
-                    <span class="ev-time">1:00</span
-                    ><span class="ev-name">Making the Hit</span>
-                  </div>
-                  <div class="ev">
-                    <span class="ev-time">3:10</span
-                    ><span class="ev-name">Conferencia</span>
-                  </div>
-                  <div class="ev">
-                    <span class="ev-time">4:10</span
-                    ><span class="ev-name">Panel</span>
-                  </div>
-                  <div class="ev ev-show">
-                    <span class="ev-time">6:00 – 8:30</span
-                    ><span class="ev-name">Showcase</span>
+                  <div class="ev ev-concert">
+                    <span class="ev-time">8:00 – 10:30</span
+                    ><span class="ev-name">Dance Salsa Show</span>
                   </div>
                 </div>
               </div>
@@ -1021,7 +1023,7 @@
               </div>
 
               <!-- ── VIERNES 18 ── -->
-              <div class="day-track day-weekend">
+              <div class="day-track">
                 <div class="day-head">
                   <div class="day-ghost">18</div>
                   <div class="day-label-wrap">
@@ -1035,17 +1037,37 @@
                     <span class="ev-time">8:30</span
                     ><span class="ev-name">Check-in</span>
                   </div>
-                  <div class="ev ev-gold">
-                    <span class="ev-time">9:00 – 11:00</span
-                    ><span class="ev-name">Hall of Fame</span>
+                  <div class="ev">
+                    <span class="ev-time">9:00</span
+                    ><span class="ev-name">Conferencia</span>
                   </div>
-                  <div class="ev ev-gold">
-                    <span class="ev-time">12:00 – 5:00</span
-                    ><span class="ev-name">Trade Fair</span>
+                  <div class="ev">
+                    <span class="ev-time">10:10</span
+                    ><span class="ev-name">Panel</span>
                   </div>
-                  <div class="ev ev-concert">
+                  <div class="ev">
+                    <span class="ev-time">11:10</span
+                    ><span class="ev-name">Conferencia</span>
+                  </div>
+                  <div class="ev ev-meta">
+                    <span class="ev-time">12:00</span
+                    ><span class="ev-name">Break</span>
+                  </div>
+                  <div class="ev">
+                    <span class="ev-time">1:00</span
+                    ><span class="ev-name">Making the Hit</span>
+                  </div>
+                  <div class="ev">
+                    <span class="ev-time">3:10</span
+                    ><span class="ev-name">Conferencia</span>
+                  </div>
+                  <div class="ev">
+                    <span class="ev-time">4:10</span
+                    ><span class="ev-name">Panel</span>
+                  </div>
+                  <div class="ev ev-show">
                     <span class="ev-time">6:00 – 8:30</span
-                    ><span class="ev-name">Salsa Legacy Show</span>
+                    ><span class="ev-name">Showcase</span>
                   </div>
                 </div>
               </div>
@@ -1110,7 +1132,7 @@
     </section>
 
     <!-- ═══════════════════════════════ HOMENAJE CALI ═══════════════════════════════ -->
-    <section id="homenaje">
+    <!-- <section id="homenaje">
       <div
         class="bg-img"
         style="
@@ -1147,7 +1169,7 @@
           </div>
           <div class="tribute-item">
             <div class="tribute-num">02</div>
-            <div class="tribute-title">Hall of Fame Caleño</div>
+            <div class="tribute-title">Hall of Fame</div>
             <div class="tribute-desc">
               Reconocimiento especial a los íconos caleños que hicieron historia
               en la salsa nacional e internacional.
@@ -1171,7 +1193,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ═══════════════════════════════ CTA ═══════════════════════════════ -->
     <section id="cta">
@@ -1187,7 +1209,7 @@
 
       <div class="section-inner" style="text-align: center">
         <div class="eyebrow reveal" style="justify-content: center">
-          Septiembre 15 – 19, 2025 · Cali, Colombia
+          Septiembre 15 – 19, 2026 · Cali, Colombia
         </div>
         <div class="cta-title reveal reveal-delay-1">
           ¡ÚNETE A<br />ESTA<br /><span style="color: var(--gold)"
@@ -1250,9 +1272,90 @@
       </div>
     </section>
 
+    <!-- ═══ STICKY TICKET WIDGET ═══ -->
+    <div class="tw-widget" id="twWidget">
+      <div class="tw-panel" id="twPanel" aria-hidden="true">
+        <div class="tw-panel-inner">
+          <button class="tw-close" id="twClose" aria-label="Cerrar">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+          <div class="tw-eyebrow">
+            <img
+              src="logos/Logo Billboard Presenta.png"
+              alt="Billboard Colombia Presenta"
+              class="tw-billboard-logo"
+            />
+          </div>
+          <div class="tw-title">CONSEGUIR<br /><span>ENTRADAS</span></div>
+          <div class="tw-divider-line"></div>
+          <div class="tw-meta">
+            <div class="tw-meta-item">
+              <div class="tw-meta-val">Prox</div>
+              <div class="tw-meta-key">pRoximamente</div>
+            </div>
+            <div class="tw-meta-sep"></div>
+            <div class="tw-meta-item">
+              <div class="tw-meta-val">CALI</div>
+              <div class="tw-meta-key">Colombia</div>
+            </div>
+          </div>
+          <a
+            href="#tickets"
+            class="tw-cta-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>OBTENER ENTRADAS</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <button
+        class="tw-tab"
+        id="twTab"
+        aria-label="Conseguir entradas"
+        aria-expanded="false"
+      >
+        <span class="tw-tab-dot"></span>
+        <svg
+          class="tw-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"
+          />
+          <path d="M13 5v2M13 17v2M13 11v2" />
+        </svg>
+        <span class="tw-tab-label">ENTRADAS</span>
+      </button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="main.js?v=4"></script>
+    <script src="main.js?v=5"></script>
   </body>
 </html>
