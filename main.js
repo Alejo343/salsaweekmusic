@@ -165,7 +165,7 @@ if (scheduleScroll && scheduleWrap) {
 }
 
 // ── Dot navigation ───────────────────────────────────────────────────────────
-const sectionIds = ['hero','porque','que-es','actividades','aliados','ponentes','schedule','homenaje','cta'];
+const sectionIds = ['hero','porque','que-es','actividades','schedule','ponentes','aliados','cta'];
 const dots = document.querySelectorAll('.dot');
 
 dots.forEach(dot => {
