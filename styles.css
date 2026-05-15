@@ -838,13 +838,12 @@ h2 .outline {
 .ev-name {
   display: block;
   font-size: 15px;
-  color: rgba(245,237,216,0.6);
+  color: rgba(255,255,255,0.9);
   line-height: 1.35;
 }
 
 /* ── Meta rows: check-in / break ── */
 .ev.ev-meta {
-  opacity: 0.28;
   padding-top: 11px;
   padding-bottom: 11px;
 }
@@ -872,7 +871,7 @@ h2 .outline {
   box-shadow: 0 0 10px rgba(212,168,67,0.45);
 }
 .ev.ev-show .ev-name {
-  color: var(--gold);
+  color: rgba(255,255,255,0.9);
   font-family: 'Bebas Neue', sans-serif;
   font-size: 15px;
   letter-spacing: 2px;
@@ -902,7 +901,7 @@ h2 .outline {
   letter-spacing: 1.5px;
   margin-top: 1px;
 }
-.ev.ev-concert .ev-time { color: rgba(192,18,42,0.55); }
+.ev.ev-concert .ev-time { color: rgba(212,168,67,0.55); }
 
 /* ── Gold special: Hall of Fame / Trade Fair ── */
 .ev.ev-gold {
@@ -914,7 +913,7 @@ h2 .outline {
   background: rgba(212,168,67,0.12);
 }
 .ev.ev-gold .ev-name {
-  color: rgba(212,168,67,0.75);
+  color: rgba(255,255,255,0.9);
   font-family: 'Bebas Neue', sans-serif;
   font-size: 16px;
   letter-spacing: 1.5px;
