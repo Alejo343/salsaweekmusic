@@ -25,6 +25,77 @@
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursor-ring"></div>
 
+    <!-- ═══════════════════════════════ INVITACIÓN QWILR ═══════════════════════════════ -->
+    <script>
+      if (!new URLSearchParams(window.location.search).has('invitacion')) {
+        document.write('<style>#invitacion-wrapper{display:none!important}</style>');
+      }
+    </script>
+    <div id="invitacion-wrapper">
+
+      <!-- SECCIÓN 1: ENCABEZADO -->
+      <section class="inv-section inv-header">
+        <video class="inv-video-bg" id="inv-video" autoplay muted loop playsinline>
+          <source src="Fondos/video.mp4" type="video/mp4">
+        </video>
+        <script>
+          var v = document.getElementById('inv-video');
+          v.addEventListener('loadedmetadata', function(){ v.currentTime = 1; });
+          v.play();
+        </script>
+        <div class="inv-overlay"></div>
+        <div class="inv-inner inv-header-inner">
+          <img src="logos/nuevo_logo.png" alt="Salsa Music Week" class="inv-logo">
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: CARTA -->
+      <section class="inv-section inv-carta" style="background-image: url('Fondos/salsa_week_1.png');">
+        <div class="inv-overlay"></div>
+        <div class="inv-inner">
+          <p class="inv-body">
+            En nombre de <strong>BILLBOARD SALSA WEEK</strong>, tenemos el honor de invitarle a participar en la primera edición de este encuentro internacional, que se realizará en Cali, Colombia —capital mundial de la salsa— del <strong>15 al 19 de septiembre de 2026</strong>.
+          </p>
+          <p class="inv-body">
+            Durante cinco días, <strong>BILLBOARD SALSA WEEK</strong> reunirá a artistas, músicos, bailarines, productores, compositores, medios e industria cultural alrededor de conferencias, paneles, showcases, networking y grandes espectáculos en vivo enfocados en el futuro global de la salsa.
+          </p>
+          <p class="inv-body">
+            Por su importante trayectoria, consideramos que su presencia sería fundamental dentro de esta conversación y celebración histórica.
+          </p>
+          <p class="inv-body">
+            Adjuntamos la presentación y agenda preliminar del evento, y esperamos poder conversar con usted o con su equipo para ampliar la información y avanzar en su participación.
+          </p>
+          <div class="inv-firma">
+            <p class="inv-saludo">Cordialmente,</p>
+            <p class="inv-firma-nombre">Rafael Araujo</p>
+            <p class="inv-firma-cargo">CEO – Billboard Colombia</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 3: PRÓXIMOS PASOS -->
+      <section class="inv-section inv-pasos" style="background-image: url('Fondos/fondo bateria.png');">
+        <div class="inv-overlay"></div>
+        <div class="inv-inner">
+          <h2 class="inv-pasos-titulo">Próximos pasos</h2>
+          <p class="inv-body">
+            Si lo consideran conveniente, nos gustaría proponer una reunión breve durante esta semana para presentarles el proyecto completo, resolver inquietudes y definir conjuntamente el mejor camino para su posible participación dentro de <strong>BILLBOARD SALSA WEEK</strong>.
+          </p>
+          <p class="inv-body">
+            Quedamos muy atentos a sus comentarios y disponibilidad.
+          </p>
+          <p class="inv-body">Reciban un cordial saludo.</p>
+          <a href="mailto:davidsupremoxd@gmail.com" class="inv-btn">Agendar reunión</a>
+          <div class="inv-scroll-hint">
+            <span>Conoce el evento</span>
+            <div class="inv-arrow">↓</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- /INVITACIÓN QWILR -->
+
     <!-- NAV -->
     <nav id="main-nav">
       <div class="nav-logo">Salsa Music Week × Billboard</div>
