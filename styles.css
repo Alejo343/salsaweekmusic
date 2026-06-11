@@ -531,92 +531,6 @@ h2 .outline {
   );
 }
 
-/* ═══ ACTIVITIES GRID ═══ */
-.activities-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  margin-top: 56px;
-}
-.activity-item {
-  background: rgba(7, 3, 10, 0.85);
-  padding: 36px 28px 32px;
-  transition: background 0.35s;
-  position: relative;
-  overflow: hidden;
-}
-.activity-item::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(192, 18, 42, 0.18) 0%,
-    transparent 60%
-  );
-  opacity: 0;
-  transition: opacity 0.35s;
-}
-.activity-item:hover {
-  background: rgba(12, 4, 8, 0.85);
-}
-.activity-item:hover::before {
-  opacity: 1;
-}
-.activity-item::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--crimson), var(--gold));
-  transition: width 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
-.activity-item:hover::after {
-  width: 100%;
-}
-.activity-icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 20px;
-  display: block;
-  color: var(--gold);
-  opacity: 0.65;
-  transition:
-    opacity 0.3s,
-    transform 0.3s,
-    color 0.3s;
-}
-.activity-icon svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.activity-item:hover .activity-icon {
-  opacity: 1;
-  color: var(--gold);
-  transform: scale(1.08);
-}
-.activity-name {
-  font-family: "Broadway", "Bebas Neue", sans-serif;
-  font-size: 19px;
-  letter-spacing: 1.5px;
-  color: white;
-  margin-bottom: 10px;
-  transition: color 0.3s;
-}
-.activity-item:hover .activity-name {
-  color: var(--cream);
-}
-.activity-desc {
-  font-size: 16px;
-  color: rgba(245, 237, 216, 0.6);
-  line-height: 1.7;
-}
-
 /* ═══ HIGHLIGHTS GRID (LO MÁS DESTACADO) ═══ */
 .highlights-grid {
   display: grid;
@@ -1495,9 +1409,6 @@ h2 .outline {
 
 /* ═══ MOBILE ═══ */
 @media (max-width: 1024px) {
-  .activities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .highlights-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1529,9 +1440,6 @@ h2 .outline {
   }
   .two-col-reverse {
     direction: ltr;
-  }
-  .activities-grid {
-    grid-template-columns: 1fr 1fr;
   }
   .highlights-grid {
     grid-template-columns: 1fr;

@@ -37,7 +37,7 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(animateRing);
 })();
 
-const interactiveSelector = 'a, button, .partner-item, .activity-item, .tribute-item, .speaker-item, .cta-btn, .dot';
+const interactiveSelector = 'a, button, .partner-item, .tribute-item, .speaker-item, .cta-btn, .dot';
 document.querySelectorAll(interactiveSelector).forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.classList.add('hover');
@@ -78,7 +78,7 @@ gsap.utils.toArray('.reveal').forEach(el => {
 });
 
 // ── Dot navigation ───────────────────────────────────────────────────────────
-const sectionIds = ['que-es','actividades','comunicado','destacados','cali','porque','cta'];
+const sectionIds = ['que-es','comunicado','destacados','cali','porque','cta'];
 const dots = document.querySelectorAll('.dot');
 
 dots.forEach(dot => {
