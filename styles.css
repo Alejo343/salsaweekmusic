@@ -1524,7 +1524,7 @@ h2 .outline {
   font-family: "DM Sans", sans-serif;
   font-size: 18px;
   line-height: 1.85;
-  color: rgba(245, 237, 216, 0.94);
+  color: var(--cream);
 }
 .qe-body strong {
   color: var(--gold);
