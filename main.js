@@ -17,25 +17,6 @@ gsap.ticker.lagSmoothing(0);
 // ── Register plugin ──────────────────────────────────────────────────────────
 gsap.registerPlugin(ScrollTrigger);
 
-// ── Ticker injected into hero ────────────────────────────────────────────────
-const heroSection = document.getElementById('hero');
-if (heroSection) {
-  const items = [
-    'Billboard Salsa Music Week',
-    'Cali, Colombia · Sept 15–19, 2025',
-    'Conferencias · Showcases · Networking',
-    'Hall of Fame Caleño',
-    'Súper Concierto · Making the Hit Live',
-    'Billboard Colombia Presenta',
-  ];
-  const doubled = [...items, ...items];
-  const track = doubled.map(t => `<span class="hero-ticker-item">${t}</span>`).join('');
-  const ticker = document.createElement('div');
-  ticker.className = 'hero-ticker';
-  ticker.innerHTML = `<div class="hero-ticker-track">${track}</div>`;
-  heroSection.appendChild(ticker);
-}
-
 // ── Custom cursor ────────────────────────────────────────────────────────────
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursor-ring');
@@ -97,7 +78,7 @@ gsap.utils.toArray('.reveal').forEach(el => {
 });
 
 // ── Dot navigation ───────────────────────────────────────────────────────────
-const sectionIds = ['hero','porque','que-es','actividades','comunicado','destacados','cali','cta'];
+const sectionIds = ['que-es','actividades','comunicado','destacados','cali','porque','cta'];
 const dots = document.querySelectorAll('.dot');
 
 dots.forEach(dot => {
