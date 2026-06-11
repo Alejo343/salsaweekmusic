@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billboard Salsa Music Week — Cali</title>
     <meta property="og:title" content="Billboard Salsa Music Week — Cali" />
-    <meta property="og:description" content="El primer evento de música salsa de Billboard en Colombia. Cali, la capital mundial de la salsa." />
-    <meta property="og:image" content="https://salsamusicweek.billboard.com.co/logos/logonegro.png" />
+    <meta
+      property="og:description"
+      content="El primer evento de música salsa de Billboard en Colombia. Cali, la capital mundial de la salsa."
+    />
+    <meta
+      property="og:image"
+      content="https://salsamusicweek.billboard.com.co/logos/logonegro.png"
+    />
     <meta property="og:url" content="https://salsamusicweek.billboard.com.co" />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/png" href="logos/logonegro.png" />
@@ -27,54 +33,88 @@
 
     <!-- ═══════════════════════════════ INVITACIÓN QWILR ═══════════════════════════════ -->
     <script>
-      if (!new URLSearchParams(window.location.search).has('invitacion')) {
-        document.write('<style>#invitacion-wrapper{display:none!important}</style>');
+      if (!new URLSearchParams(window.location.search).has("invitacion")) {
+        document.write(
+          "<style>#invitacion-wrapper{display:none!important}</style>",
+        );
       }
     </script>
     <div id="invitacion-wrapper">
-
       <!-- SECCIÓN 1: ENCABEZADO -->
       <section class="inv-section inv-header">
-        <video class="inv-video-bg" id="inv-video" autoplay muted loop playsinline>
-          <source src="fondos/video.mp4" type="video/mp4">
+        <video
+          class="inv-video-bg"
+          id="inv-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="fondos/video.mp4" type="video/mp4" />
         </video>
         <script>
-          var v = document.getElementById('inv-video');
-          v.addEventListener('loadedmetadata', function(){ v.currentTime = 1; });
+          var v = document.getElementById("inv-video");
+          v.addEventListener("loadedmetadata", function () {
+            v.currentTime = 1;
+          });
           v.play();
         </script>
         <div class="inv-overlay"></div>
         <div class="inv-inner inv-header-inner">
-          <img src="logos/nuevo_logo.png" alt="Salsa Music Week" class="inv-logo">
+          <img
+            src="logos/nuevo_logo.png"
+            alt="Salsa Music Week"
+            class="inv-logo"
+          />
         </div>
       </section>
 
       <!-- SECCIÓN 2: CARTA -->
-      <section class="inv-section inv-carta" style="background-image: url('fondos/salsa_week_1.png');">
+      <section
+        class="inv-section inv-carta"
+        style="background-image: url(&quot;fondos/salsa_week_1.png&quot;)"
+      >
         <div class="inv-overlay"></div>
         <div class="inv-inner">
           <p class="inv-body">
-            En nombre de <strong>BILLBOARD SALSA WEEK</strong>, tenemos el honor de invitarle a participar en la primera edición de este encuentro internacional, que se realizará en Cali, Colombia —capital mundial de la salsa— del <strong>15 al 19 de septiembre de 2026</strong>.
+            En nombre de <strong>BILLBOARD SALSA WEEK</strong>, tenemos el honor
+            de invitarle a participar en la primera edición de este encuentro
+            internacional, que se realizará en Cali, Colombia —capital mundial
+            de la salsa— del <strong>15 al 19 de septiembre de 2026</strong>.
           </p>
           <p class="inv-body">
-            Durante cinco días, <strong>BILLBOARD SALSA WEEK</strong> reunirá a artistas, músicos, bailarines, productores, compositores, medios e industria cultural alrededor de conferencias, paneles, showcases, networking y grandes espectáculos en vivo enfocados en el futuro global de la salsa.
+            Durante cinco días, <strong>BILLBOARD SALSA WEEK</strong> reunirá a
+            artistas, músicos, bailarines, productores, compositores, medios e
+            industria cultural alrededor de conferencias, paneles, showcases,
+            networking y grandes espectáculos en vivo enfocados en el futuro
+            global de la salsa.
           </p>
           <p class="inv-body">
-            Por su importante trayectoria, consideramos que su presencia sería fundamental dentro de esta conversación y celebración histórica.
+            Por su importante trayectoria, consideramos que su presencia sería
+            fundamental dentro de esta conversación y celebración histórica.
           </p>
           <p class="inv-body">
-            Adjuntamos la presentación y agenda preliminar del evento, y esperamos poder conversar con usted o con su equipo para ampliar la información y avanzar en su participación.
+            Adjuntamos la presentación y agenda preliminar del evento, y
+            esperamos poder conversar con usted o con su equipo para ampliar la
+            información y avanzar en su participación.
           </p>
         </div>
       </section>
 
       <!-- SECCIÓN 3: PRÓXIMOS PASOS -->
-      <section class="inv-section inv-pasos" style="background-image: url('fondos/fondo bateria.png');">
+      <section
+        class="inv-section inv-pasos"
+        style="background-image: url(&quot;fondos/fondo bateria.png&quot;)"
+      >
         <div class="inv-overlay"></div>
         <div class="inv-inner">
           <h2 class="inv-pasos-titulo">Próximos pasos</h2>
           <p class="inv-body">
-            Si lo consideran conveniente, nos gustaría proponer una reunión breve durante esta semana para presentarles el proyecto completo, resolver inquietudes y definir conjuntamente el mejor camino para su posible participación dentro de <strong>BILLBOARD SALSA WEEK</strong>.
+            Si lo consideran conveniente, nos gustaría proponer una reunión
+            breve durante esta semana para presentarles el proyecto completo,
+            resolver inquietudes y definir conjuntamente el mejor camino para su
+            posible participación dentro de
+            <strong>BILLBOARD SALSA WEEK</strong>.
           </p>
           <p class="inv-body">
             Quedamos muy atentos a sus comentarios y disponibilidad.
@@ -86,7 +126,6 @@
           </div>
         </div>
       </section>
-
     </div>
     <!-- /INVITACIÓN QWILR -->
 
@@ -99,7 +138,7 @@
       <div class="dot" data-target="porque"></div>
       <div class="dot" data-target="cta"></div>
     </div>
-  
+
     <!-- ═══════════════════════════════ QUÉ ES ═══════════════════════════════ -->
     <section id="que-es">
       <div
@@ -109,7 +148,7 @@
           filter: brightness(0.45);
         "
       ></div>
-      <div class="bg-overlay" style="background: rgba(7,3,10,0.55)"></div>
+      <div class="bg-overlay" style="background: rgba(7, 3, 10, 0.55)"></div>
       <div class="que-es-corona"></div>
       <div class="section-label">01 / Qué es</div>
 
@@ -145,9 +184,11 @@
           <div class="qe-body">
             Un universo compuesto por <strong>estrellas</strong> que brillan
             desde hace décadas y por constelaciones enteras formadas por
-            <strong>cantantes, músicos, compositores, productores, bailarines,
-            instrumentos, disqueras, emisoras, escenarios</strong> y
-            generaciones completas que han mantenido vivo este movimiento
+            <strong
+              >cantantes, músicos, compositores, productores, bailarines,
+              instrumentos, disqueras, emisoras, escenarios</strong
+            >
+            y generaciones completas que han mantenido vivo este movimiento
             cultural alrededor del mundo.
           </div>
 
@@ -157,7 +198,8 @@
           </div>
 
           <div class="qe-body qe-body--highlight">
-            Hoy, por primera vez, <strong>Billboard</strong> logra alinearlo.
+            Ahora, por primera vez, <strong>Billboard Colombia</strong> logra
+            alinearlo.
           </div>
 
           <div class="qe-date-block">
@@ -231,28 +273,18 @@
           <div class="qe-body">
             <strong>Cali, Colombia</strong> será la sede de la primera edición
             de Billboard Salsa Music Week, un encuentro internacional que
-            reunirá a artistas, ejecutivos, productores, bailarines,
-            académicos, medios de comunicación, creadores de contenido y
-            fanáticos para celebrar, analizar y proyectar el futuro de la
-            salsa a nivel mundial.
+            reunirá a artistas, ejecutivos, productores, bailarines, académicos,
+            medios de comunicación, creadores de contenido y fanáticos para
+            celebrar el legado de la salsa, analizar y proyectar el futuro del
+            género a nivel mundial.
           </div>
 
           <div class="qe-callout">
             Del 15 al 19 de septiembre de 2026, la capital mundial de la salsa
             se convertirá en el epicentro de la industria con una agenda que
-            incluirá conferencias, paneles, showcases, experiencias
-            culturales, espacios de networking, exhibiciones, activaciones de
-            marca y grandes espectáculos en vivo.
-          </div>
-
-          <div class="qe-body">
-            De acuerdo a <strong>Billboard Colombia</strong>, el objetivo del
-            evento es demostrar que la salsa trasciende la música y
-            constituye un verdadero universo cultural integrado por artistas,
-            músicos, compositores, bailarines, productores, coleccionistas,
-            investigadores, medios especializados, DJs, escuelas y miles de
-            actores que mantienen vivo uno de los géneros más importantes de
-            la música latinoamericana.
+            incluirá conferencias, paneles, showcases, experiencias culturales,
+            espacios de networking, exhibiciones, activaciones de marca y
+            grandes espectáculos en vivo.
           </div>
         </div>
       </div>
@@ -270,13 +302,19 @@
       <div class="bg-overlay" style="background: rgba(7, 3, 10, 0.6)"></div>
       <div class="section-label">03 / Lo Más Destacado</div>
 
-      <div class="section-inner" style="padding-top: 120px; padding-bottom: 80px">
+      <div
+        class="section-inner"
+        style="padding-top: 120px; padding-bottom: 80px"
+      >
         <div class="reveal">
           <div class="eyebrow">Comunicado de Prensa · Billboard Colombia</div>
           <h2>LO MÁS <span class="outline">DESTACADO</span></h2>
           <div class="gold-divider"></div>
           <div class="body-text" style="max-width: 640px; margin-top: 20px">
-            <p>Entre las experiencias destacadas del evento se encuentran:</p>
+            <p>
+              Entre las experiencias más relevantes de
+              <strong>Billboard Salsa Week</strong> se encuentran:
+            </p>
           </div>
         </div>
 
@@ -294,7 +332,10 @@
                 <rect x="9" y="2" width="6" height="11" rx="3" />
                 <path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8" /></svg
             ></span>
-            <p>Más de <strong>40 conferencias, paneles y showcases</strong> con figuras de la industria.</p>
+            <p>
+              Más de <strong>40 conferencias, paneles y showcases</strong> con
+              figuras de la industria.
+            </p>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon"
@@ -312,7 +353,10 @@
                   d="M4 22h16M9 22v-4M15 22v-4M12 18a4 4 0 0 1-4-4V4h8v10a4 4 0 0 1-4 4z"
                 /></svg
             ></span>
-            <p>El <strong>Billboard Hall of Fame</strong>, un espacio inmersivo dedicado a honrar a las leyendas de la salsa.</p>
+            <p>
+              El <strong>Billboard Hall of Fame</strong>, un espacio inmersivo
+              dedicado a honrar a las leyendas de la salsa.
+            </p>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon"
@@ -329,7 +373,10 @@
                 />
                 <path d="M13 5v2M13 17v2M13 11v2" /></svg
             ></span>
-            <p>El <strong>Billboard Concierto de la Salsa</strong>, que reunirá grandes estrellas del género en Cali.</p>
+            <p>
+              El <strong>Billboard Concierto de la Salsa</strong>, que reunirá
+              grandes estrellas del género en Cali.
+            </p>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon"
@@ -345,7 +392,11 @@
                 <circle cx="6" cy="18" r="3" />
                 <circle cx="18" cy="16" r="3" /></svg
             ></span>
-            <p><strong>Making The Hit</strong>, una experiencia en vivo que mostrará cómo se construye una canción de salsa desde su creación hasta su producción final.</p>
+            <p>
+              <strong>Making The Hit</strong>, una experiencia en vivo que
+              mostrará cómo se construye una canción de salsa desde su creación
+              hasta su producción final.
+            </p>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon"
@@ -361,7 +412,10 @@
                   d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"
                 /></svg
             ></span>
-            <p><strong>La Calle del Sabor</strong>, un recorrido cultural y gastronómico inspirado en la identidad salsera de la ciudad.</p>
+            <p>
+              <strong>La Calle del Sabor</strong>, un recorrido cultural y
+              gastronómico inspirado en la identidad salsera de la ciudad.
+            </p>
           </div>
           <div class="highlight-card">
             <span class="highlight-icon"
@@ -379,7 +433,10 @@
                 <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
                 <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" /></svg
             ></span>
-            <p>Una <strong>feria comercial</strong> y espacios de networking para profesionales de la industria musical.</p>
+            <p>
+              Una <strong>feria comercial</strong> y espacios de networking para
+              profesionales de la industria musical.
+            </p>
           </div>
         </div>
       </div>
@@ -404,28 +461,30 @@
           <div class="gold-divider"></div>
         </div>
 
-        <div class="two-col reveal reveal-delay-2" style="align-items: start; margin-top: 24px">
+        <div
+          class="two-col reveal reveal-delay-2"
+          style="align-items: start; margin-top: 24px"
+        >
           <div class="body-text">
             <p>
-              La elección de Cali como sede responde a su reconocimiento
-              internacional como la capital mundial de la salsa, una ciudad
-              donde convergen algunas de las principales orquestas,
-              bailarines, coleccionistas, escuelas y espacios dedicados al
-              género.
+              La elección de Cali ccomo sede, responde a su reconocimiento
+              internacional como la capital mundial de la salsa. Una ciudad
+              donde convergen muchas de las principales orquestas, bailarines,
+              coleccionistas, escuelas y espacios dedicados al género.
             </p>
             <p>
-              Además de reunir a grandes figuras del género, Billboard Salsa
-              Music Week servirá como plataforma para impulsar nuevas
-              generaciones de artistas y conectar el talento emergente con
-              oportunidades reales dentro de la industria musical global.
+              Además de reunir a grandes figuras, Billboard Salsa Music Week
+              servirá como plataforma para impulsar nuevas generaciones de
+              artistas y conectar el talento emergente con oportunidades reales
+              dentro de la industria musical global.
             </p>
           </div>
 
           <div class="qe-callout" style="margin-bottom: 0">
-            Con este lanzamiento, Billboard Colombia apuesta por crear el
-            evento de salsa más importante del mundo, posicionando a Cali
-            como el punto de encuentro anual para todos los sectores que
-            hacen parte del universo de timbales.
+            Con este lanzamiento, Billboard Colombia apuesta por crear el evento
+            de salsa más importante del mundo, posicionando a Cali como el punto
+            de encuentro anual para todos los sectores que hacen parte del
+            universo de timbales.
           </div>
         </div>
       </div>
@@ -447,7 +506,7 @@
         <!-- Centered header with logo -->
         <div class="porque-header">
           <img
-            src="logos/Logo%20Billboard%20Presenta.png"
+            src="logos/Logo_Billboard.png"
             class="billboard-hero-logo reveal reveal-delay-1"
             alt="Billboard Colombia Presenta"
           />
@@ -503,39 +562,139 @@
           <div class="eco-label">Ecosistema de aliados</div>
           <div class="eco-strip">
             <div class="eco-track">
-              <div class="eco-logo"><img src="logos_sin_fondo/spotify.png" alt="Spotify" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/universal%20music-Photoroom.png" alt="Universal Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/sony%20music.png" alt="Sony Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png" alt="Apple Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/amazon%20music-Photoroom.png" alt="Amazon Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/Virgin_Music-Photoroom.png" alt="Virgin Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/tiktok-Photoroom.png" alt="TikTok" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/claro%20musica-Photoroom.png" alt="Claro Música" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/deezer.png" alt="Deezer" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/yt%20music.png" alt="YouTube Music" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/ONErpm-logo-Photoroom.png" alt="ONErpm" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/ocesa-Photoroom.png" alt="OCESA" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/codiscos-Photoroom.png" alt="Codiscos" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/decibeles.net-Photoroom.png" alt="Decibeles.net" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/luminate.png" alt="Luminate" /></div>
-              <div class="eco-logo"><img src="logos_sin_fondo/Los_40.svg.png" alt="Los 40" /></div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/spotify.png" alt="Spotify" />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/universal%20music-Photoroom.png"
+                  alt="Universal Music"
+                />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/sony%20music.png" alt="Sony Music" />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png"
+                  alt="Apple Music"
+                />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/amazon%20music-Photoroom.png"
+                  alt="Amazon Music"
+                />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/Virgin_Music-Photoroom.png"
+                  alt="Virgin Music"
+                />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/tiktok-Photoroom.png" alt="TikTok" />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/claro%20musica-Photoroom.png"
+                  alt="Claro Música"
+                />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/deezer.png" alt="Deezer" />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/yt%20music.png" alt="YouTube Music" />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/ONErpm-logo-Photoroom.png"
+                  alt="ONErpm"
+                />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/ocesa-Photoroom.png" alt="OCESA" />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/codiscos-Photoroom.png"
+                  alt="Codiscos"
+                />
+              </div>
+              <div class="eco-logo">
+                <img
+                  src="logos_sin_fondo/decibeles.net-Photoroom.png"
+                  alt="Decibeles.net"
+                />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/luminate.png" alt="Luminate" />
+              </div>
+              <div class="eco-logo">
+                <img src="logos_sin_fondo/Los_40.svg.png" alt="Los 40" />
+              </div>
               <!-- Duplicado para scroll infinito -->
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/spotify.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/universal%20music-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/sony%20music.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/amazon%20music-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Virgin_Music-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/tiktok-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/claro%20musica-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/deezer.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/yt%20music.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/ONErpm-logo-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/ocesa-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/codiscos-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/decibeles.net-Photoroom.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/luminate.png" alt="" /></div>
-              <div class="eco-logo" aria-hidden="true"><img src="logos_sin_fondo/Los_40.svg.png" alt="" /></div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/spotify.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img
+                  src="logos_sin_fondo/universal%20music-Photoroom.png"
+                  alt=""
+                />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/sony%20music.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img
+                  src="logos_sin_fondo/Apple-Music-Top-Songs-2022-Photoroom.png"
+                  alt=""
+                />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img
+                  src="logos_sin_fondo/amazon%20music-Photoroom.png"
+                  alt=""
+                />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/Virgin_Music-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/tiktok-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img
+                  src="logos_sin_fondo/claro%20musica-Photoroom.png"
+                  alt=""
+                />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/deezer.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/yt%20music.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/ONErpm-logo-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/ocesa-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/codiscos-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/decibeles.net-Photoroom.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/luminate.png" alt="" />
+              </div>
+              <div class="eco-logo" aria-hidden="true">
+                <img src="logos_sin_fondo/Los_40.svg.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -592,7 +751,7 @@
           <img
             src="logos/Logo_Billboard.png"
             alt="Billboard"
-            style="height: 28px; object-fit: contain;"
+            style="height: 28px; object-fit: contain"
           />
         </div>
       </div>
