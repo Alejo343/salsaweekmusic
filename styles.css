@@ -435,6 +435,15 @@ h2 .outline {
   margin-top: 18px;
 }
 
+@media (min-width: 769px) {
+  .highlights-intro {
+    max-width: none;
+  }
+  .highlights-intro p {
+    white-space: nowrap;
+  }
+}
+
 /* ═══ GOLD DIVIDER ═══ */
 .gold-divider {
   width: 52px;
