@@ -931,6 +931,26 @@ h2 .outline {
   z-index: 1;
 }
 
+.contacto-bloque {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 20px;
+}
+.contacto-email {
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(18px, 2.2vw, 26px);
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+  padding-bottom: 4px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.contacto-email:hover {
+  color: var(--cream);
+  border-color: var(--cream);
+}
 .ecosistema {
   width: 100%;
   display: flex;
