@@ -1190,6 +1190,12 @@ h2 .outline {
   line-height: 1.85;
   color: var(--cream);
 }
+.qe-body p {
+  margin-bottom: 1.4em;
+}
+.qe-body p:last-child {
+  margin-bottom: 0;
+}
 .qe-body strong {
   color: var(--gold);
   font-weight: 500;
