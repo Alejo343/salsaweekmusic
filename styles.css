@@ -2866,6 +2866,12 @@ h2 .outline {
     top: 18px;
     right: 18px;
   }
+  .ponente-row-center {
+    display: contents;
+  }
+  .ponente-card--center {
+    width: 100%;
+  }
   .partner-item {
     width: 76px;
     height: 76px;
