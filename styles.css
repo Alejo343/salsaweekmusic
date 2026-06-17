@@ -1554,6 +1554,17 @@ h2 .outline {
   border: 1px solid var(--border);
 }
 
+.ponente-row-center {
+  grid-column: 1 / -1;
+  background: rgba(7, 3, 10, 0.88);
+  display: flex;
+  justify-content: center;
+}
+
+.ponente-card--center {
+  width: 50%;
+}
+
 .ponente-card {
   background: rgba(7, 3, 10, 0.88);
   padding: 36px 30px 32px;
