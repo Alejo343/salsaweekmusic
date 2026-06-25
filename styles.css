@@ -2423,6 +2423,115 @@ h2 .outline {
   font-style: normal;
 }
 
+/* ─── GALAXIAS ─── */
+.qe-galaxias {
+  margin: 36px 0;
+  position: relative;
+}
+
+.qe-galaxias-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.qe-galaxias-rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(192,18,42,0.5), rgba(212,175,55,0.4), transparent);
+}
+
+.qe-galaxias-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 44px;
+  letter-spacing: 14px;
+  color: transparent;
+  background: linear-gradient(135deg, var(--gold) 0%, #e8c96a 45%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.qe-galaxias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qe-galaxia-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 9px 18px;
+  border-radius: 100px;
+  background: rgba(8, 3, 3, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(192, 18, 42, 0.28);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: rgba(245, 237, 216, 0.92);
+  cursor: default;
+  overflow: hidden;
+  transition: color 0.25s, transform 0.25s, border-color 0.25s,
+              background 0.25s, box-shadow 0.25s;
+}
+
+/* Tier grande — Cantantes, Orquestas, Baile */
+.qe-galaxia-tag:nth-child(1),
+.qe-galaxia-tag:nth-child(2),
+.qe-galaxia-tag:nth-child(8) {
+  font-size: 14px;
+  padding: 11px 26px;
+  letter-spacing: 1.3px;
+}
+
+/* Tier pequeño — DJs, Podcast, Venues, Radio, Stream */
+.qe-galaxia-tag:nth-child(6),
+.qe-galaxia-tag:nth-child(7),
+.qe-galaxia-tag:nth-child(9),
+.qe-galaxia-tag:nth-child(11),
+.qe-galaxia-tag:nth-child(14) {
+  font-size: 10px;
+  padding: 7px 13px;
+  letter-spacing: 0.7px;
+}
+
+.qe-galaxia-tag::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+  right: 35%;
+  height: 1px;
+  background: rgba(192, 18, 42, 0.4);
+  transition: left 0.3s, right 0.3s, background 0.3s;
+}
+
+.qe-galaxia-tag:hover {
+  color: var(--gold);
+  transform: translateY(-3px);
+  border-color: rgba(192, 18, 42, 0.65);
+  background: rgba(192, 18, 42, 0.1);
+  box-shadow: 0 6px 24px rgba(192, 18, 42, 0.18),
+              inset 0 1px 0 rgba(212, 175, 55, 0.08);
+}
+
+.qe-galaxia-tag:hover::after {
+  left: 8%;
+  right: 8%;
+  background: var(--gold);
+}
+
+@media (max-width: 600px) {
+  .qe-galaxias-title { font-size: 32px; letter-spacing: 8px; }
+}
+
 /* "Hoy, por primera vez" emphasis row */
 .qe-body--highlight {
   font-size: 17px;
